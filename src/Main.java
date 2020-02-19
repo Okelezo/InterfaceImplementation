@@ -13,7 +13,12 @@ import java.util.ArrayDeque;
 class Main {
     public static void main(String[] args) {
 
-        DequeueInterface dq = new DequeueInterfaceImpl();
+        DequeueInterface dq = new DequeueInterfaceImpl() {
+            @Override
+            public void show() {
+
+            }
+        };
 
         dq.addFront("John");
 
@@ -32,6 +37,6 @@ class Main {
 
         dq.addRear("Bill");
         System.out.println(dq.removeRear());
-        System.out.println(dq);
+        dq.show();
     }
 }

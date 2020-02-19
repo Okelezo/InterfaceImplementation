@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class DequeueInterfaceImpl implements DequeueInterface {
+public abstract class DequeueInterfaceImpl implements DequeueInterface {
     private Deque<Object> dandy;
 
 
@@ -27,6 +27,11 @@ public class DequeueInterfaceImpl implements DequeueInterface {
     @Override
     public Object removeRear() {
         return dandy.removeLast();
+
+    }
+
+    @Override
+    public void show() {
 
     }
 }

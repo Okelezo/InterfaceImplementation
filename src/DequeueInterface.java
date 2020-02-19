@@ -22,4 +22,6 @@ public interface DequeueInterface {
     public Object removeRear();
 
 
+    void show();
+    
 }
