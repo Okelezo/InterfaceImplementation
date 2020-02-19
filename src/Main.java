@@ -7,8 +7,31 @@
  * in the main method below
  */
 
+import java.util.Deque;
+import java.util.ArrayDeque;
+
 class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        DequeueInterface dq = new DequeueInterfaceImpl();
+
+        dq.addFront("John");
+
+
+        dq.addFront("Paul");
+
+
+        dq.addFront("Simon");
+        System.out.println(dq.removeFront());
+
+        dq.addRear("Peter");
+
+
+        dq.addRear("Zack");
+
+
+        dq.addRear("Bill");
+        System.out.println(dq.removeRear());
+        System.out.println(dq);
     }
 }
